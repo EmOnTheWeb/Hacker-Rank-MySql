@@ -1,2 +1,2 @@
-# hackerRankBasicSQL
-practicing and getting to grips with MySQL Select statements on hacker rank. Some v.trivial, others more engaging 
+# hackerRankMySQL
+mySQL solutions on hackerRank simple select, more advanced select queries, basic join, aggregations
