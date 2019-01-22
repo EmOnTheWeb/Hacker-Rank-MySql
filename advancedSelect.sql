@@ -1,5 +1,3 @@
-/**problem one(solved)**/
-
 select concat(name,'(',substring(occupation, 1,1),')')
 from OCCUPATIONS
 order by name ASC; 
@@ -9,9 +7,6 @@ from OCCUPATIONS
 group by occupation 
 order by COUNT(occupation) ASC, occupation ASC; 
 
-
-
-/**problem two, pivot table. not quite...**/
 
 select CASE when occupation="Doctor" then name else null end,
 		CASE when occupation="Professor" then name else null end,
@@ -27,9 +22,6 @@ from (select CASE when occupation="Doctor" then name end as "doctor",
 		from OCCUPATIONS) as pivot --derived tables need an alias--
 where doctor is not NULL;  --returns rows where doctor has a value but this doesn't get rid of the nulls alongside...-- 
 
-
-
-/**problem three (various solutions and partial solutions)**/ 
 
 select *
 from BST as t1, BST as t2
